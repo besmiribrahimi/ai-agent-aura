@@ -2,8 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Pristina Tech • Inbox Orchestrator v2.4-PROD | Hackathon Dashboard',
-  description: 'AI-Powered Omnichannel Triage & Telemetry Engine for Pristina Electronics Retailer',
+  title: 'Kosova Digital • Dyqani i Pajisjeve Elektronike & AI Inbox (Prishtinë)',
+  description: 'Dyqani kryesor i pajisjeve elektronike origjinale me garanci në Prishtinë, Kosovë. Këste 0% dhe triazhim i menjëhershëm me AI.',
 };
 
 export default function RootLayout({
@@ -12,16 +12,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="sq" className="antialiased">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#0B0F17] text-slate-100 antialiased min-h-screen selection:bg-emerald-500/30 selection:text-emerald-300">
+      <body className="bg-[#FAFBFD] text-slate-900 antialiased min-h-screen selection:bg-slate-900 selection:text-white font-sans">
         {children}
       </body>
     </html>
