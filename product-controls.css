@@ -1,0 +1,48 @@
+.product-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.modal-faq {
+  padding: 26px clamp(22px, 5vw, 48px) 32px;
+  border-top: 1px solid var(--line);
+}
+
+.modal-faq > h2 {
+  margin: 0 0 18px;
+  font: 500 23px var(--serif);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.faq-grid h3 {
+  margin: 0 0 8px;
+  font-size: 10px;
+}
+
+.faq-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
